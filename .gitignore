@@ -1,0 +1,15 @@
+# Visual Studio files and directories
+[Bb]in/
+[Oo]bj/
+*.suo
+*.user
+*.vshost.*
+*.pdb
+*.vshost.*
+/.vs/
+*.csproj.user
+*.sln.docstates
+
+# NuGet packages (CRITICAL)
+packages/
+*.nupkg
