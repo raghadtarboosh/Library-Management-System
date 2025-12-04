@@ -16,5 +16,24 @@ namespace LibraryManagementSystem
         {
             InitializeComponent();
         }
+
+        private void عارةكتابToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void إدارةالكتبToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Lec 03 & 04: عرض نموذج جديد
+            frmBooks booksForm = new frmBooks();
+
+            // لإظهار النموذج بشكل مستقل عن النموذج الرئيسي
+            booksForm.Show();
+        }
+
+        private void تسجيلخروجToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

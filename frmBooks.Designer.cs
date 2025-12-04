@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.grpInput = new System.Windows.Forms.GroupBox();
+            this.lbYear = new System.Windows.Forms.Label();
+            this.lbISBN = new System.Windows.Forms.Label();
             this.lblAuthor = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.txtTitle = new System.Windows.Forms.TextBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.txtAuthor = new System.Windows.Forms.TextBox();
-            this.txtYear = new System.Windows.Forms.TextBox();
             this.txtISBN = new System.Windows.Forms.TextBox();
+            this.txtYear = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.dgvBooks = new System.Windows.Forms.DataGridView();
-            this.lbISBN = new System.Windows.Forms.Label();
-            this.lbYear = new System.Windows.Forms.Label();
             this.grpInput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +61,25 @@
             this.grpInput.TabIndex = 0;
             this.grpInput.TabStop = false;
             this.grpInput.Text = "بيانات الكتاب";
+            this.grpInput.Enter += new System.EventHandler(this.grpInput_Enter);
+            // 
+            // lbYear
+            // 
+            this.lbYear.AutoSize = true;
+            this.lbYear.Location = new System.Drawing.Point(261, 210);
+            this.lbYear.Name = "lbYear";
+            this.lbYear.Size = new System.Drawing.Size(70, 17);
+            this.lbYear.TabIndex = 8;
+            this.lbYear.Text = ":عام النشر";
+            // 
+            // lbISBN
+            // 
+            this.lbISBN.AutoSize = true;
+            this.lbISBN.Location = new System.Drawing.Point(219, 150);
+            this.lbISBN.Name = "lbISBN";
+            this.lbISBN.Size = new System.Drawing.Size(112, 17);
+            this.lbISBN.TabIndex = 7;
+            this.lbISBN.Text = ":الرقم التسلسلي";
             // 
             // lblAuthor
             // 
@@ -72,6 +91,13 @@
             this.lblAuthor.Text = ":المؤلف";
             this.lblAuthor.Click += new System.EventHandler(this.lblAuthor_Click);
             // 
+            // txtTitle
+            // 
+            this.txtTitle.Location = new System.Drawing.Point(25, 38);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(250, 24);
+            this.txtTitle.TabIndex = 3;
+            // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
@@ -81,19 +107,19 @@
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = ":العنوان";
             // 
-            // txtTitle
-            // 
-            this.txtTitle.Location = new System.Drawing.Point(25, 38);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(250, 24);
-            this.txtTitle.TabIndex = 3;
-            // 
             // txtAuthor
             // 
             this.txtAuthor.Location = new System.Drawing.Point(25, 100);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(250, 24);
             this.txtAuthor.TabIndex = 4;
+            // 
+            // txtISBN
+            // 
+            this.txtISBN.Location = new System.Drawing.Point(25, 150);
+            this.txtISBN.Name = "txtISBN";
+            this.txtISBN.Size = new System.Drawing.Size(197, 24);
+            this.txtISBN.TabIndex = 6;
             // 
             // txtYear
             // 
@@ -102,13 +128,6 @@
             this.txtYear.Size = new System.Drawing.Size(222, 24);
             this.txtYear.TabIndex = 5;
             this.txtYear.TextChanged += new System.EventHandler(this.txtYear_TextChanged);
-            // 
-            // txtISBN
-            // 
-            this.txtISBN.Location = new System.Drawing.Point(25, 150);
-            this.txtISBN.Name = "txtISBN";
-            this.txtISBN.Size = new System.Drawing.Size(197, 24);
-            this.txtISBN.TabIndex = 6;
             // 
             // btnUpdate
             // 
@@ -135,6 +154,7 @@
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "إضافة";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -158,24 +178,8 @@
             this.dgvBooks.RowTemplate.Height = 26;
             this.dgvBooks.Size = new System.Drawing.Size(317, 320);
             this.dgvBooks.TabIndex = 10;
-            // 
-            // lbISBN
-            // 
-            this.lbISBN.AutoSize = true;
-            this.lbISBN.Location = new System.Drawing.Point(219, 150);
-            this.lbISBN.Name = "lbISBN";
-            this.lbISBN.Size = new System.Drawing.Size(112, 17);
-            this.lbISBN.TabIndex = 7;
-            this.lbISBN.Text = ":الرقم التسلسلي";
-            // 
-            // lbYear
-            // 
-            this.lbYear.AutoSize = true;
-            this.lbYear.Location = new System.Drawing.Point(261, 210);
-            this.lbYear.Name = "lbYear";
-            this.lbYear.Size = new System.Drawing.Size(70, 17);
-            this.lbYear.TabIndex = 8;
-            this.lbYear.Text = ":عام النشر";
+            this.dgvBooks.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBooks_CellClick);
+            this.dgvBooks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBooks_CellContentClick);
             // 
             // frmBooks
             // 

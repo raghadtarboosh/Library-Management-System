@@ -29,11 +29,143 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ملفToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.تسجيلخروجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.الإدارةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.إدارةالكتبToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.إدارةالأعضاءToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.الإعارةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.عارةكتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.إرجاعكتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.التقاريرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.تقاريرالغراماتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ملفToolStripMenuItem,
+            this.الإدارةToolStripMenuItem,
+            this.الإعارةToolStripMenuItem,
+            this.التقاريرToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // ملفToolStripMenuItem
+            // 
+            this.ملفToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.تسجيلخروجToolStripMenuItem});
+            this.ملفToolStripMenuItem.Name = "ملفToolStripMenuItem";
+            this.ملفToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
+            this.ملفToolStripMenuItem.Text = "ملف";
+            // 
+            // تسجيلخروجToolStripMenuItem
+            // 
+            this.تسجيلخروجToolStripMenuItem.Name = "تسجيلخروجToolStripMenuItem";
+            this.تسجيلخروجToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.تسجيلخروجToolStripMenuItem.Text = "تسجيل خروج";
+            this.تسجيلخروجToolStripMenuItem.Click += new System.EventHandler(this.تسجيلخروجToolStripMenuItem_Click);
+            // 
+            // الإدارةToolStripMenuItem
+            // 
+            this.الإدارةToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.إدارةالكتبToolStripMenuItem,
+            this.إدارةالأعضاءToolStripMenuItem});
+            this.الإدارةToolStripMenuItem.Name = "الإدارةToolStripMenuItem";
+            this.الإدارةToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.الإدارةToolStripMenuItem.Text = "الإدارة ";
+            // 
+            // إدارةالكتبToolStripMenuItem
+            // 
+            this.إدارةالكتبToolStripMenuItem.Name = "إدارةالكتبToolStripMenuItem";
+            this.إدارةالكتبToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.إدارةالكتبToolStripMenuItem.Text = "إدارة الكتب";
+            this.إدارةالكتبToolStripMenuItem.Click += new System.EventHandler(this.إدارةالكتبToolStripMenuItem_Click);
+            // 
+            // إدارةالأعضاءToolStripMenuItem
+            // 
+            this.إدارةالأعضاءToolStripMenuItem.Name = "إدارةالأعضاءToolStripMenuItem";
+            this.إدارةالأعضاءToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.إدارةالأعضاءToolStripMenuItem.Text = "إدارة الأعضاء";
+            // 
+            // الإعارةToolStripMenuItem
+            // 
+            this.الإعارةToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.عارةكتابToolStripMenuItem,
+            this.إرجاعكتابToolStripMenuItem});
+            this.الإعارةToolStripMenuItem.Name = "الإعارةToolStripMenuItem";
+            this.الإعارةToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.الإعارةToolStripMenuItem.Text = "الإعارة";
+            // 
+            // عارةكتابToolStripMenuItem
+            // 
+            this.عارةكتابToolStripMenuItem.Name = "عارةكتابToolStripMenuItem";
+            this.عارةكتابToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.عارةكتابToolStripMenuItem.Text = "إعارة كتاب";
+            this.عارةكتابToolStripMenuItem.Click += new System.EventHandler(this.عارةكتابToolStripMenuItem_Click);
+            // 
+            // إرجاعكتابToolStripMenuItem
+            // 
+            this.إرجاعكتابToolStripMenuItem.Name = "إرجاعكتابToolStripMenuItem";
+            this.إرجاعكتابToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.إرجاعكتابToolStripMenuItem.Text = "إرجاع كتاب";
+            // 
+            // التقاريرToolStripMenuItem
+            // 
+            this.التقاريرToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.تقاريرالغراماتToolStripMenuItem});
+            this.التقاريرToolStripMenuItem.Name = "التقاريرToolStripMenuItem";
+            this.التقاريرToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.التقاريرToolStripMenuItem.Text = "التقارير";
+            // 
+            // تقاريرالغراماتToolStripMenuItem
+            // 
+            this.تقاريرالغراماتToolStripMenuItem.Name = "تقاريرالغراماتToolStripMenuItem";
+            this.تقاريرالغراماتToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.تقاريرالغراماتToolStripMenuItem.Text = "تقارير الغرامات";
+            // 
+            // frmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmMain";
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "frmMain";
+            this.Text = "نظام إدارة المكتبة - الواجهة الرئيسية";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem ملفToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem تسجيلخروجToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem الإدارةToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem إدارةالكتبToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem إدارةالأعضاءToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem الإعارةToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem عارةكتابToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem التقاريرToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem إرجاعكتابToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem تقاريرالغراماتToolStripMenuItem;
     }
 }
