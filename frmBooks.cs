@@ -15,9 +15,9 @@ namespace LibraryManagementSystem
     public partial class frmBooks : Form
     {
         // Lec 04: إغلاق الواجهة الحالية والعودة للدخول
-    //    frmLogin loginForm = new frmLogin();
-    //    loginForm.Show();
-    //this.Close(); // إغلاق frmMain
+        //    frmLogin loginForm = new frmLogin();
+        //    loginForm.Show();
+        //this.Close(); // إغلاق frmMain
 
 
         // 1. تعريف متغيرات الحالة والخدمة (في أعلى الفئة)
@@ -115,5 +115,88 @@ namespace LibraryManagementSystem
                 btnDelete.Enabled = true;
             }
         }
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (_selectedBookId == 0)
+            {
+                MessageBox.Show("يرجى اختيار كتاب لتعديله أولاً.");
+                return;
+            }
+
+            // 1. إنشاء كائن Book جديد بالبيانات المحدثة (مع ID)
+            Book updatedBook = new Book
+            {
+                BookId = _selectedBookId, // مهم جداً لتحديد الصف المراد تعديله
+                Title = txtTitle.Text,
+                Author = txtAuthor.Text,
+                ISBN = txtISBN.Text,
+                YearPublished = int.Parse(txtYear.Text),
+                IsAvailable = true
+            };
+
+            // 2. استدعاء خدمة التعديل
+            try
+            {
+                _bookService.UpdateBook(updatedBook);
+                MessageBox.Show("تم تعديل الكتاب بنجاح!");
+
+                // 3. تحديث جدول العرض ومسح الحقول
+                LoadBooksData();
+                ClearInputFields(); // دالة جديدة لسهولة الاستخدام
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"حدث خطأ في التعديل: {ex.Message}");
+            }
+
+           
+        } 
+
+            // دالة مساعدة لعملية التنظيف
+            private void ClearInputFields()
+            {
+                txtTitle.Clear();
+                txtAuthor.Clear();
+                txtISBN.Clear();
+                txtYear.Clear();
+                _selectedBookId = 0; // إعادة تعيين الـ ID المحدد
+                btnUpdate.Enabled = false;
+                btnDelete.Enabled = false;
+            }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (_selectedBookId == 0)
+            {
+                MessageBox.Show("يرجى اختيار كتاب لحذفه أولاً.");
+                return;
+            }
+
+            // 1. طلب تأكيد الحذف من المستخدم
+            DialogResult confirm = MessageBox.Show(
+                "هل أنت متأكد من حذف هذا الكتاب؟",
+                "تأكيد الحذف",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (confirm == DialogResult.Yes)
+            {
+                // 2. استدعاء خدمة الحذف
+                try
+                {
+                    _bookService.DeleteBook(_selectedBookId);
+                    MessageBox.Show("تم حذف الكتاب بنجاح!");
+
+                    // 3. تحديث الجدول ومسح الحقول
+                    LoadBooksData();
+                    ClearInputFields();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"حدث خطأ في الحذف: {ex.Message}");
+                }
+            }
+        }
     }
-}
+    }
+

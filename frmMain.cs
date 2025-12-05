@@ -35,5 +35,15 @@ namespace LibraryManagementSystem
         {
 
         }
+
+        private void إدارةالأعضاءToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            {
+                // فتح واجهة الأعضاء عند النقر
+                frmMembers membersForm = new frmMembers();
+                membersForm.Show();
+            }
+        }
     }
 }

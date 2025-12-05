@@ -52,6 +52,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ملفToolStripMenuItem,
@@ -60,7 +61,8 @@
             this.التقاريرToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1029, 33);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -69,13 +71,13 @@
             this.ملفToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.تسجيلخروجToolStripMenuItem});
             this.ملفToolStripMenuItem.Name = "ملفToolStripMenuItem";
-            this.ملفToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
+            this.ملفToolStripMenuItem.Size = new System.Drawing.Size(63, 29);
             this.ملفToolStripMenuItem.Text = "ملف";
             // 
             // تسجيلخروجToolStripMenuItem
             // 
             this.تسجيلخروجToolStripMenuItem.Name = "تسجيلخروجToolStripMenuItem";
-            this.تسجيلخروجToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.تسجيلخروجToolStripMenuItem.Size = new System.Drawing.Size(208, 34);
             this.تسجيلخروجToolStripMenuItem.Text = "تسجيل خروج";
             this.تسجيلخروجToolStripMenuItem.Click += new System.EventHandler(this.تسجيلخروجToolStripMenuItem_Click);
             // 
@@ -85,21 +87,22 @@
             this.إدارةالكتبToolStripMenuItem,
             this.إدارةالأعضاءToolStripMenuItem});
             this.الإدارةToolStripMenuItem.Name = "الإدارةToolStripMenuItem";
-            this.الإدارةToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.الإدارةToolStripMenuItem.Size = new System.Drawing.Size(78, 29);
             this.الإدارةToolStripMenuItem.Text = "الإدارة ";
             // 
             // إدارةالكتبToolStripMenuItem
             // 
             this.إدارةالكتبToolStripMenuItem.Name = "إدارةالكتبToolStripMenuItem";
-            this.إدارةالكتبToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.إدارةالكتبToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.إدارةالكتبToolStripMenuItem.Text = "إدارة الكتب";
             this.إدارةالكتبToolStripMenuItem.Click += new System.EventHandler(this.إدارةالكتبToolStripMenuItem_Click);
             // 
             // إدارةالأعضاءToolStripMenuItem
             // 
             this.إدارةالأعضاءToolStripMenuItem.Name = "إدارةالأعضاءToolStripMenuItem";
-            this.إدارةالأعضاءToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.إدارةالأعضاءToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.إدارةالأعضاءToolStripMenuItem.Text = "إدارة الأعضاء";
+            this.إدارةالأعضاءToolStripMenuItem.Click += new System.EventHandler(this.إدارةالأعضاءToolStripMenuItem_Click);
             // 
             // الإعارةToolStripMenuItem
             // 
@@ -107,20 +110,20 @@
             this.عارةكتابToolStripMenuItem,
             this.إرجاعكتابToolStripMenuItem});
             this.الإعارةToolStripMenuItem.Name = "الإعارةToolStripMenuItem";
-            this.الإعارةToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.الإعارةToolStripMenuItem.Size = new System.Drawing.Size(75, 29);
             this.الإعارةToolStripMenuItem.Text = "الإعارة";
             // 
             // عارةكتابToolStripMenuItem
             // 
             this.عارةكتابToolStripMenuItem.Name = "عارةكتابToolStripMenuItem";
-            this.عارةكتابToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.عارةكتابToolStripMenuItem.Size = new System.Drawing.Size(194, 34);
             this.عارةكتابToolStripMenuItem.Text = "إعارة كتاب";
             this.عارةكتابToolStripMenuItem.Click += new System.EventHandler(this.عارةكتابToolStripMenuItem_Click);
             // 
             // إرجاعكتابToolStripMenuItem
             // 
             this.إرجاعكتابToolStripMenuItem.Name = "إرجاعكتابToolStripMenuItem";
-            this.إرجاعكتابToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.إرجاعكتابToolStripMenuItem.Size = new System.Drawing.Size(194, 34);
             this.إرجاعكتابToolStripMenuItem.Text = "إرجاع كتاب";
             // 
             // التقاريرToolStripMenuItem
@@ -128,22 +131,23 @@
             this.التقاريرToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.تقاريرالغراماتToolStripMenuItem});
             this.التقاريرToolStripMenuItem.Name = "التقاريرToolStripMenuItem";
-            this.التقاريرToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.التقاريرToolStripMenuItem.Size = new System.Drawing.Size(83, 29);
             this.التقاريرToolStripMenuItem.Text = "التقارير";
             // 
             // تقاريرالغراماتToolStripMenuItem
             // 
             this.تقاريرالغراماتToolStripMenuItem.Name = "تقاريرالغراماتToolStripMenuItem";
-            this.تقاريرالغراماتToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.تقاريرالغراماتToolStripMenuItem.Size = new System.Drawing.Size(229, 34);
             this.تقاريرالغراماتToolStripMenuItem.Text = "تقارير الغرامات";
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1029, 534);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmMain";
             this.Text = "نظام إدارة المكتبة - الواجهة الرئيسية";
             this.menuStrip1.ResumeLayout(false);
