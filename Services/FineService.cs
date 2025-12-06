@@ -40,35 +40,32 @@ namespace LibraryManagementSystem.Services
                 return fine;
             }
         }
+       
+       
+        // داخل FineService.cs
         public List<Fine> GetUnpaidFines()
         {
             using (var context = new LibraryContext())
             {
-                // LINQ: جلب الغرامات التي لم يتم دفعها بعد، مع تضمين بيانات العضو
+                // LINQ: جلب الغرامات التي لم يتم دفعها بعد
                 return context.Fines.Where(f => f.IsPaid == false)
-                                    // الربط بين Fines -> Borrowing -> Member
-                                    .Include(f => f.Borrowing)
-                                    .Include(f => f.Borrowing.Member)
+                                    .Include(f => f.Borrowing.Member) // جلب بيانات العضو المرتبطة
                                     .ToList();
             }
+        
         }
+        // داخل FineService.cs
         public void PayFine(int fineId)
         {
             using (var context = new LibraryContext())
             {
-                // 1. إيجاد سجل الغرامة
                 var fine = context.Fines.Find(fineId);
-
-                if (fine != null && fine.IsPaid == false)
+                if (fine != null && !fine.IsPaid)
                 {
-                    // 2. تعيين حالة الدفع إلى true
-                    fine.IsPaid = true;
-
-                    // 3. حفظ التغييرات
+                    fine.IsPaid = true; // تعيين حالة الدفع إلى true
                     context.SaveChanges();
                 }
             }
-
         }
     }
 }

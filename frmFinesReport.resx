@@ -117,44 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="linkLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAA/pJREFUWEe1
-        Vm1oU1cYjraJSBUVdD/2JcJGsaJNc262ttbcnhuVFvEjN1bYL/XPfsn2Y65sbBC23DBhOMTV+cG+mLU3
-        BlGRoqb5MwaKH+CoIvuEsUH1JlXr7k1d83n3ntMTjfHcfNU+8BASnvM8zz3vOZfYasV4Z/NCTRTWJ7zu
-        dzQs7NMwGriL3QcSEvoI2De2Fr3KpM8Pps3WkMCuHZokROOSkIp73aYVQZMHzc04FvZOiK2LmUX9SHSj
-        TWD6Gy+sMoWJuIT6TVFsZHbVw2xvn5+Q3N/SJ+KaV09NQjcSHufrzLoy7nQ5l0HwdZ5ZvQS/YWZfHmRu
-        sHWjPJN6qUnuS+TwsghrwGGbA00v8kxKSUYDHIMZ34LPP60OZ9XhBGD0Ls+kmGSecMJ3kzGxZRRmz2vz
-        4hhtTEhCBHxyVOutIXxMREth4b+lgY8puSfh3r9NdoktsYQmutqhzPGqwwn+Czcp93auzPDCSTHN29bB
-        pM8fv5+3zUvH7PdTUUfu4YfL05r3ydWD8Dw8+RYmnR1MRRs2p2MOs8DkwNJ0vLeNzhEO1yCTzR5SUfuB
-        4gKEjyILsvfeWpUex0Izk80eUjH7j6UFCFMXHVeYxBI4qHtwSP+5HorBZA81gfn/zS0wYj9IBWXgUXSf
-        FDLMuqgYQWoCQQavQDrW+D4VlMEMCxyjJjCCJK/A1EjjXioog5kU6A7p31ATGMEYrwDszH4qKIMZFVD0
-        6RFD0GWLAj9RQRmIocltPPNqCAf4A2oCQYdKw8ejTbk9p7qmVqlbX6EiC3R99nAJDhrSE05IYI4JPUBy
-        0uHE54qDCyTlqclUrMFfHH7jwgvZ3pO9OSHsN12qXPEmlIOkTG7mhWNFz3cGJl+kIjNqayI3ITXiyP9w
-        rjnzpurLk3BCpMoZNCivpcKaYc7BinHZosAoE03jzoUFX753uiNbCC4mlLjrPCFX/5eKAWb8MS+cEAeT
-        0/MvYPVx38sQ9IhXgBCp/jga8m1g8vIIBObikKGQbeaGK0ayK6Q/9X+CAoX9n/DCC4SCeShypk31e9FR
-        ZGfLHgNF1i9qC/t2g+52x5HDGRya4BeAcmzJ02iJ9DkEVb7KCy8lhBhEC4XOobA8DN9HhbCcLta88V1/
-        tnvfP9mSAr+27zfns8hn0fr9ppfA8K9ioxlxcGdu3RfXMvTJFV33fGqsZlHWWBPpWwFP9AfXsB6q2/Od
-        AycfQAnMIirDGelZhlRfjGtYI8mOtg5udTLrGhCwzYWd2AO8zzOuRFiXgZvzFTmczLE+oEjfIjQk98OO
-        /MILKiUEPwAequfdURHEFF7Pu2BbP4cQFTjsCstnXUO+r+G3fueJbWJLoMXB5BVgs/0PTg9LEjWlwjAA
-        AAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="frmlogin2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 16</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>نظام إدارة مكتبة_تسجيل الدخول </value>
-  </data>
 </root>

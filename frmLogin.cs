@@ -57,26 +57,12 @@ namespace LibraryManagementSystem
 
         private void frmlogin2_Paint(object sender, PaintEventArgs e)
         {
-            Panel p = sender as Panel;
+            
 
-            // خلفية البانيل
-            p.BackColor = Color.White;
+        }
 
-            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-            // EXTENDED SOFT SHADOW (FLOAT EFFECT)
-            for (int i = 1; i <= 12; i++)
-            {
-                int alpha = 40 - (i * 3); // تخفيف الظل كل ما ابتعد
-                if (alpha < 1) alpha = 1;
-
-                using (SolidBrush b = new SolidBrush(Color.FromArgb(alpha, 0, 0, 0)))
-                {
-                    e.Graphics.FillRectangle(b,
-                        new Rectangle(p.Left - i, p.Top - i, p.Width + (i * 2), p.Height + (i * 2)));
-                }
-            }
-
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -46,116 +46,145 @@
             // 
             // grpInputMembers
             // 
+            this.grpInputMembers.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.grpInputMembers.Controls.Add(this.lblEmail);
             this.grpInputMembers.Controls.Add(this.txtEmail);
             this.grpInputMembers.Controls.Add(this.lblContact);
             this.grpInputMembers.Controls.Add(this.txtContactNumber);
             this.grpInputMembers.Controls.Add(this.txtFullName);
             this.grpInputMembers.Controls.Add(this.lblFullName);
-            this.grpInputMembers.Location = new System.Drawing.Point(488, 12);
+            this.grpInputMembers.Location = new System.Drawing.Point(320, 40);
+            this.grpInputMembers.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grpInputMembers.Name = "grpInputMembers";
-            this.grpInputMembers.Size = new System.Drawing.Size(300, 226);
+            this.grpInputMembers.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grpInputMembers.Size = new System.Drawing.Size(336, 223);
             this.grpInputMembers.TabIndex = 0;
             this.grpInputMembers.TabStop = false;
             this.grpInputMembers.Text = "بيانات العضو";
+            this.grpInputMembers.Enter += new System.EventHandler(this.grpInputMembers_Enter);
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(183, 168);
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblEmail.Location = new System.Drawing.Point(213, 156);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(123, 19);
+            this.lblEmail.Size = new System.Drawing.Size(128, 23);
             this.lblEmail.TabIndex = 3;
             this.lblEmail.Text = ":البريد الإلكتروني";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(28, 165);
+            this.txtEmail.Location = new System.Drawing.Point(4, 158);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(144, 27);
+            this.txtEmail.Size = new System.Drawing.Size(213, 24);
             this.txtEmail.TabIndex = 2;
             // 
             // lblContact
             // 
             this.lblContact.AutoSize = true;
-            this.lblContact.Location = new System.Drawing.Point(193, 100);
+            this.lblContact.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblContact.Location = new System.Drawing.Point(236, 100);
+            this.lblContact.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblContact.Name = "lblContact";
-            this.lblContact.Size = new System.Drawing.Size(89, 19);
+            this.lblContact.Size = new System.Drawing.Size(96, 23);
             this.lblContact.TabIndex = 2;
             this.lblContact.Text = ":رقم الاتصال";
             // 
             // txtContactNumber
             // 
-            this.txtContactNumber.Location = new System.Drawing.Point(28, 100);
+            this.txtContactNumber.Location = new System.Drawing.Point(4, 99);
+            this.txtContactNumber.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtContactNumber.Name = "txtContactNumber";
-            this.txtContactNumber.Size = new System.Drawing.Size(144, 27);
+            this.txtContactNumber.Size = new System.Drawing.Size(213, 24);
             this.txtContactNumber.TabIndex = 1;
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(28, 46);
+            this.txtFullName.Location = new System.Drawing.Point(4, 49);
+            this.txtFullName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(144, 27);
+            this.txtFullName.Size = new System.Drawing.Size(213, 24);
             this.txtFullName.TabIndex = 1;
             // 
             // lblFullName
             // 
             this.lblFullName.AutoSize = true;
-            this.lblFullName.Location = new System.Drawing.Point(178, 46);
+            this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblFullName.Location = new System.Drawing.Point(236, 50);
+            this.lblFullName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(104, 19);
+            this.lblFullName.Size = new System.Drawing.Size(101, 23);
             this.lblFullName.TabIndex = 0;
             this.lblFullName.Text = ":الاسم الكامل";
             // 
             // dgvMembers
             // 
+            this.dgvMembers.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgvMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMembers.Location = new System.Drawing.Point(419, 326);
+            this.dgvMembers.GridColor = System.Drawing.SystemColors.ControlLight;
+            this.dgvMembers.Location = new System.Drawing.Point(2, 26);
+            this.dgvMembers.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dgvMembers.Name = "dgvMembers";
             this.dgvMembers.RowHeadersWidth = 62;
             this.dgvMembers.RowTemplate.Height = 29;
-            this.dgvMembers.Size = new System.Drawing.Size(240, 115);
+            this.dgvMembers.Size = new System.Drawing.Size(297, 284);
             this.dgvMembers.TabIndex = 1;
             // 
             // btnAddMember
             // 
-            this.btnAddMember.Location = new System.Drawing.Point(695, 259);
+            this.btnAddMember.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnAddMember.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnAddMember.ForeColor = System.Drawing.Color.White;
+            this.btnAddMember.Location = new System.Drawing.Point(495, 347);
+            this.btnAddMember.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnAddMember.Name = "btnAddMember";
-            this.btnAddMember.Size = new System.Drawing.Size(93, 42);
+            this.btnAddMember.Size = new System.Drawing.Size(152, 45);
             this.btnAddMember.TabIndex = 2;
             this.btnAddMember.Text = "إضافة عضو";
-            this.btnAddMember.UseVisualStyleBackColor = true;
+            this.btnAddMember.UseVisualStyleBackColor = false;
             // 
             // btnUpdateMember
             // 
-            this.btnUpdateMember.Location = new System.Drawing.Point(576, 259);
+            this.btnUpdateMember.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnUpdateMember.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnUpdateMember.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateMember.Location = new System.Drawing.Point(258, 347);
+            this.btnUpdateMember.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnUpdateMember.Name = "btnUpdateMember";
-            this.btnUpdateMember.Size = new System.Drawing.Size(98, 42);
+            this.btnUpdateMember.Size = new System.Drawing.Size(152, 45);
             this.btnUpdateMember.TabIndex = 3;
             this.btnUpdateMember.Text = "تعديل عضو";
-            this.btnUpdateMember.UseVisualStyleBackColor = true;
+            this.btnUpdateMember.UseVisualStyleBackColor = false;
             // 
             // btnDeleteMember
             // 
-            this.btnDeleteMember.Location = new System.Drawing.Point(441, 259);
+            this.btnDeleteMember.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnDeleteMember.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnDeleteMember.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteMember.Location = new System.Drawing.Point(31, 347);
+            this.btnDeleteMember.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDeleteMember.Name = "btnDeleteMember";
-            this.btnDeleteMember.Size = new System.Drawing.Size(98, 42);
+            this.btnDeleteMember.Size = new System.Drawing.Size(152, 45);
             this.btnDeleteMember.TabIndex = 4;
             this.btnDeleteMember.Text = "حذف عضو";
-            this.btnDeleteMember.UseVisualStyleBackColor = true;
+            this.btnDeleteMember.UseVisualStyleBackColor = false;
             // 
             // frmMembers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 480);
+            this.ClientSize = new System.Drawing.Size(667, 404);
             this.Controls.Add(this.btnDeleteMember);
             this.Controls.Add(this.btnUpdateMember);
             this.Controls.Add(this.btnAddMember);
             this.Controls.Add(this.dgvMembers);
             this.Controls.Add(this.grpInputMembers);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "frmMembers";
-            this.Text = " ";
+            this.Text = "Z";
             this.grpInputMembers.ResumeLayout(false);
             this.grpInputMembers.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();

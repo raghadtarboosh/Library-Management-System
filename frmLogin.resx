@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;txtUsername.Name" xml:space="preserve">
-    <value>txtUsername</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 161</value>
@@ -174,6 +171,9 @@
   <data name="lblPassword.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 10.2pt, style=Bold</value>
   </data>
+  <data name="linkLabel1.Text" xml:space="preserve">
+    <value>التسجيل من خلال جوجل</value>
+  </data>
   <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 20</value>
   </data>
@@ -183,11 +183,11 @@
   <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 349</value>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;linkLabel1.Name" xml:space="preserve">
-    <value>linkLabel1</value>
+  <data name="frmlogin2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>354, 420</value>
   </data>
   <data name="btnLogin.Text" xml:space="preserve">
     <value>دخول</value>
@@ -206,9 +206,6 @@
   </data>
   <data name="frmlogin2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>20, 20, 20, 20</value>
-  </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
   </data>
   <data name="frmlogin2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -261,6 +258,9 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>frmlogin2</value>
   </data>
@@ -269,9 +269,6 @@
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="frmlogin2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>354, 420</value>
   </data>
   <data name="txtUsername.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 30</value>
@@ -300,6 +297,9 @@
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 31</value>
   </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 349</value>
+  </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -309,8 +309,8 @@
   <data name="&gt;&gt;lblUsername.Parent" xml:space="preserve">
     <value>frmlogin2</value>
   </data>
-  <data name="linkLabel1.Text" xml:space="preserve">
-    <value>التسجيل من خلال جوجل</value>
+  <data name="&gt;&gt;linkLabel1.Name" xml:space="preserve">
+    <value>linkLabel1</value>
   </data>
   <data name="lblUsername.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 10.2pt, style=Bold</value>
@@ -324,8 +324,8 @@
   <data name="linkLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 12</value>
   </data>
   <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -407,8 +407,8 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 12</value>
+  <data name="&gt;&gt;txtUsername.Name" xml:space="preserve">
+    <value>txtUsername</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>

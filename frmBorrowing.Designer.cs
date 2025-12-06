@@ -51,17 +51,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(556, 27);
+            this.label1.Location = new System.Drawing.Point(606, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 19);
+            this.label1.Size = new System.Drawing.Size(104, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = ":رقم اتصال العضو";
             // 
             // txtMemberContact
             // 
-            this.txtMemberContact.Location = new System.Drawing.Point(450, 27);
+            this.txtMemberContact.Location = new System.Drawing.Point(411, 27);
+            this.txtMemberContact.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtMemberContact.Name = "txtMemberContact";
-            this.txtMemberContact.Size = new System.Drawing.Size(100, 27);
+            this.txtMemberContact.Size = new System.Drawing.Size(191, 24);
             this.txtMemberContact.TabIndex = 1;
             // 
             // contextMenuStrip1
@@ -72,9 +74,10 @@
             // 
             // btnSearchMember
             // 
-            this.btnSearchMember.Location = new System.Drawing.Point(450, 60);
+            this.btnSearchMember.Location = new System.Drawing.Point(447, 57);
+            this.btnSearchMember.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnSearchMember.Name = "btnSearchMember";
-            this.btnSearchMember.Size = new System.Drawing.Size(100, 31);
+            this.btnSearchMember.Size = new System.Drawing.Size(78, 26);
             this.btnSearchMember.TabIndex = 3;
             this.btnSearchMember.Text = "بحث العضو";
             this.btnSearchMember.UseVisualStyleBackColor = true;
@@ -83,42 +86,48 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(691, 27);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(714, 30);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 19);
+            this.label2.Size = new System.Drawing.Size(75, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = ":اسم العضو";
             // 
             // lblMemberName
             // 
             this.lblMemberName.AutoSize = true;
-            this.lblMemberName.Location = new System.Drawing.Point(724, 81);
+            this.lblMemberName.Location = new System.Drawing.Point(354, 34);
+            this.lblMemberName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMemberName.Name = "lblMemberName";
-            this.lblMemberName.Size = new System.Drawing.Size(45, 19);
+            this.lblMemberName.Size = new System.Drawing.Size(40, 17);
             this.lblMemberName.TabIndex = 5;
             this.lblMemberName.Text = "____";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(556, 142);
+            this.label3.Location = new System.Drawing.Point(601, 102);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 19);
+            this.label3.Size = new System.Drawing.Size(102, 17);
             this.label3.TabIndex = 6;
             this.label3.Text = "رقم ISBN للكتاب";
             // 
             // txtBookISBN
             // 
-            this.txtBookISBN.Location = new System.Drawing.Point(450, 139);
+            this.txtBookISBN.Location = new System.Drawing.Point(392, 99);
+            this.txtBookISBN.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtBookISBN.Name = "txtBookISBN";
-            this.txtBookISBN.Size = new System.Drawing.Size(100, 27);
+            this.txtBookISBN.Size = new System.Drawing.Size(191, 24);
             this.txtBookISBN.TabIndex = 7;
             // 
             // btnSearchBook
             // 
-            this.btnSearchBook.Location = new System.Drawing.Point(450, 184);
+            this.btnSearchBook.Location = new System.Drawing.Point(449, 147);
+            this.btnSearchBook.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnSearchBook.Name = "btnSearchBook";
-            this.btnSearchBook.Size = new System.Drawing.Size(98, 31);
+            this.btnSearchBook.Size = new System.Drawing.Size(76, 26);
             this.btnSearchBook.TabIndex = 8;
             this.btnSearchBook.Text = "بحث الكتاب";
             this.btnSearchBook.UseVisualStyleBackColor = true;
@@ -126,46 +135,54 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(679, 147);
+            this.label4.Location = new System.Drawing.Point(707, 102);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 19);
+            this.label4.Size = new System.Drawing.Size(82, 17);
             this.label4.TabIndex = 9;
             this.label4.Text = ":عنوان الكتاب";
             // 
             // lblBookTitle
             // 
             this.lblBookTitle.AutoSize = true;
-            this.lblBookTitle.Location = new System.Drawing.Point(724, 196);
+            this.lblBookTitle.Location = new System.Drawing.Point(372, 138);
+            this.lblBookTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBookTitle.Name = "lblBookTitle";
-            this.lblBookTitle.Size = new System.Drawing.Size(45, 19);
+            this.lblBookTitle.Size = new System.Drawing.Size(40, 17);
             this.lblBookTitle.TabIndex = 10;
             this.lblBookTitle.Text = "____";
             // 
             // dgvAvailableBooks
             // 
+            this.dgvAvailableBooks.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgvAvailableBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAvailableBooks.Location = new System.Drawing.Point(12, 12);
+            this.dgvAvailableBooks.Location = new System.Drawing.Point(9, 10);
+            this.dgvAvailableBooks.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dgvAvailableBooks.Name = "dgvAvailableBooks";
             this.dgvAvailableBooks.RowHeadersWidth = 62;
             this.dgvAvailableBooks.RowTemplate.Height = 29;
-            this.dgvAvailableBooks.Size = new System.Drawing.Size(204, 414);
+            this.dgvAvailableBooks.Size = new System.Drawing.Size(159, 349);
             this.dgvAvailableBooks.TabIndex = 11;
             // 
             // btnBorrow
             // 
-            this.btnBorrow.Location = new System.Drawing.Point(628, 330);
+            this.btnBorrow.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnBorrow.ForeColor = System.Drawing.Color.White;
+            this.btnBorrow.Location = new System.Drawing.Point(632, 378);
+            this.btnBorrow.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnBorrow.Name = "btnBorrow";
-            this.btnBorrow.Size = new System.Drawing.Size(141, 46);
+            this.btnBorrow.Size = new System.Drawing.Size(143, 46);
             this.btnBorrow.TabIndex = 12;
             this.btnBorrow.Text = "تسجيل الإعارة";
-            this.btnBorrow.UseVisualStyleBackColor = true;
+            this.btnBorrow.UseVisualStyleBackColor = false;
             this.btnBorrow.Click += new System.EventHandler(this.btnBorrow_Click);
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(467, 330);
+            this.btnReturn.Location = new System.Drawing.Point(459, 378);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(143, 46);
+            this.btnReturn.Size = new System.Drawing.Size(149, 46);
             this.btnReturn.TabIndex = 13;
             this.btnReturn.Text = "تسجيل الإرجاع";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -173,17 +190,19 @@
             // 
             // dgvActiveBorrowings
             // 
+            this.dgvActiveBorrowings.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgvActiveBorrowings.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvActiveBorrowings.Location = new System.Drawing.Point(222, 12);
+            this.dgvActiveBorrowings.Location = new System.Drawing.Point(193, 237);
+            this.dgvActiveBorrowings.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dgvActiveBorrowings.Name = "dgvActiveBorrowings";
             this.dgvActiveBorrowings.RowHeadersWidth = 62;
             this.dgvActiveBorrowings.RowTemplate.Height = 29;
-            this.dgvActiveBorrowings.Size = new System.Drawing.Size(205, 414);
+            this.dgvActiveBorrowings.Size = new System.Drawing.Size(177, 176);
             this.dgvActiveBorrowings.TabIndex = 14;
             // 
             // frmBorrowing
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvActiveBorrowings);
@@ -200,6 +219,7 @@
             this.Controls.Add(this.btnSearchMember);
             this.Controls.Add(this.txtMemberContact);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "frmBorrowing";
             this.Text = "عمليات الإعارة والإرجاع";
             this.Load += new System.EventHandler(this.frmBorrowing_Load);
