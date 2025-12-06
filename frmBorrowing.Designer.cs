@@ -43,13 +43,15 @@
             this.dgvAvailableBooks = new System.Windows.Forms.DataGridView();
             this.btnBorrow = new System.Windows.Forms.Button();
             this.btnReturn = new System.Windows.Forms.Button();
+            this.dgvActiveBorrowings = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailableBooks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvActiveBorrowings)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(509, 27);
+            this.label1.Location = new System.Drawing.Point(556, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 19);
             this.label1.TabIndex = 0;
@@ -57,7 +59,7 @@
             // 
             // txtMemberContact
             // 
-            this.txtMemberContact.Location = new System.Drawing.Point(365, 27);
+            this.txtMemberContact.Location = new System.Drawing.Point(450, 27);
             this.txtMemberContact.Name = "txtMemberContact";
             this.txtMemberContact.Size = new System.Drawing.Size(100, 27);
             this.txtMemberContact.TabIndex = 1;
@@ -70,12 +72,13 @@
             // 
             // btnSearchMember
             // 
-            this.btnSearchMember.Location = new System.Drawing.Point(365, 69);
+            this.btnSearchMember.Location = new System.Drawing.Point(450, 60);
             this.btnSearchMember.Name = "btnSearchMember";
             this.btnSearchMember.Size = new System.Drawing.Size(100, 31);
             this.btnSearchMember.TabIndex = 3;
             this.btnSearchMember.Text = "بحث العضو";
             this.btnSearchMember.UseVisualStyleBackColor = true;
+            this.btnSearchMember.Click += new System.EventHandler(this.btnSearchMember_Click);
             // 
             // label2
             // 
@@ -98,7 +101,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(507, 147);
+            this.label3.Location = new System.Drawing.Point(556, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 19);
             this.label3.TabIndex = 6;
@@ -106,14 +109,14 @@
             // 
             // txtBookISBN
             // 
-            this.txtBookISBN.Location = new System.Drawing.Point(365, 139);
+            this.txtBookISBN.Location = new System.Drawing.Point(450, 139);
             this.txtBookISBN.Name = "txtBookISBN";
             this.txtBookISBN.Size = new System.Drawing.Size(100, 27);
             this.txtBookISBN.TabIndex = 7;
             // 
             // btnSearchBook
             // 
-            this.btnSearchBook.Location = new System.Drawing.Point(365, 184);
+            this.btnSearchBook.Location = new System.Drawing.Point(450, 184);
             this.btnSearchBook.Name = "btnSearchBook";
             this.btnSearchBook.Size = new System.Drawing.Size(98, 31);
             this.btnSearchBook.TabIndex = 8;
@@ -145,7 +148,7 @@
             this.dgvAvailableBooks.Name = "dgvAvailableBooks";
             this.dgvAvailableBooks.RowHeadersWidth = 62;
             this.dgvAvailableBooks.RowTemplate.Height = 29;
-            this.dgvAvailableBooks.Size = new System.Drawing.Size(256, 414);
+            this.dgvAvailableBooks.Size = new System.Drawing.Size(204, 414);
             this.dgvAvailableBooks.TabIndex = 11;
             // 
             // btnBorrow
@@ -156,21 +159,34 @@
             this.btnBorrow.TabIndex = 12;
             this.btnBorrow.Text = "تسجيل الإعارة";
             this.btnBorrow.UseVisualStyleBackColor = true;
+            this.btnBorrow.Click += new System.EventHandler(this.btnBorrow_Click);
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(344, 330);
+            this.btnReturn.Location = new System.Drawing.Point(467, 330);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(143, 46);
             this.btnReturn.TabIndex = 13;
             this.btnReturn.Text = "تسجيل الإرجاع";
             this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
+            // dgvActiveBorrowings
+            // 
+            this.dgvActiveBorrowings.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvActiveBorrowings.Location = new System.Drawing.Point(222, 12);
+            this.dgvActiveBorrowings.Name = "dgvActiveBorrowings";
+            this.dgvActiveBorrowings.RowHeadersWidth = 62;
+            this.dgvActiveBorrowings.RowTemplate.Height = 29;
+            this.dgvActiveBorrowings.Size = new System.Drawing.Size(205, 414);
+            this.dgvActiveBorrowings.TabIndex = 14;
             // 
             // frmBorrowing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvActiveBorrowings);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnBorrow);
             this.Controls.Add(this.dgvAvailableBooks);
@@ -186,7 +202,9 @@
             this.Controls.Add(this.label1);
             this.Name = "frmBorrowing";
             this.Text = "عمليات الإعارة والإرجاع";
+            this.Load += new System.EventHandler(this.frmBorrowing_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailableBooks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvActiveBorrowings)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,5 +226,6 @@
         private System.Windows.Forms.DataGridView dgvAvailableBooks;
         private System.Windows.Forms.Button btnBorrow;
         private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.DataGridView dgvActiveBorrowings;
     }
 }

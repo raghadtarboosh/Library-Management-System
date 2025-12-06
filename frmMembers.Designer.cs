@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.grpInputMembers = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.lblFullName = new System.Windows.Forms.Label();
-            this.txtFullName = new System.Windows.Forms.TextBox();
-            this.txtContactNumber = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblContact = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
+            this.txtContactNumber = new System.Windows.Forms.TextBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.lblFullName = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dgvMembers = new System.Windows.Forms.DataGridView();
             this.btnAddMember = new System.Windows.Forms.Button();
             this.btnUpdateMember = new System.Windows.Forms.Button();
@@ -59,28 +59,14 @@
             this.grpInputMembers.TabStop = false;
             this.grpInputMembers.Text = "بيانات العضو";
             // 
-            // lblFullName
+            // lblEmail
             // 
-            this.lblFullName.AutoSize = true;
-            this.lblFullName.Location = new System.Drawing.Point(178, 46);
-            this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(104, 19);
-            this.lblFullName.TabIndex = 0;
-            this.lblFullName.Text = ":الاسم الكامل";
-            // 
-            // txtFullName
-            // 
-            this.txtFullName.Location = new System.Drawing.Point(28, 46);
-            this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(144, 27);
-            this.txtFullName.TabIndex = 1;
-            // 
-            // txtContactNumber
-            // 
-            this.txtContactNumber.Location = new System.Drawing.Point(28, 100);
-            this.txtContactNumber.Name = "txtContactNumber";
-            this.txtContactNumber.Size = new System.Drawing.Size(144, 27);
-            this.txtContactNumber.TabIndex = 1;
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(183, 168);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(123, 19);
+            this.lblEmail.TabIndex = 3;
+            this.lblEmail.Text = ":البريد الإلكتروني";
             // 
             // txtEmail
             // 
@@ -98,14 +84,28 @@
             this.lblContact.TabIndex = 2;
             this.lblContact.Text = ":رقم الاتصال";
             // 
-            // lblEmail
+            // txtContactNumber
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(183, 168);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(123, 19);
-            this.lblEmail.TabIndex = 3;
-            this.lblEmail.Text = ":البريد الإلكتروني";
+            this.txtContactNumber.Location = new System.Drawing.Point(28, 100);
+            this.txtContactNumber.Name = "txtContactNumber";
+            this.txtContactNumber.Size = new System.Drawing.Size(144, 27);
+            this.txtContactNumber.TabIndex = 1;
+            // 
+            // txtFullName
+            // 
+            this.txtFullName.Location = new System.Drawing.Point(28, 46);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(144, 27);
+            this.txtFullName.TabIndex = 1;
+            // 
+            // lblFullName
+            // 
+            this.lblFullName.AutoSize = true;
+            this.lblFullName.Location = new System.Drawing.Point(178, 46);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(104, 19);
+            this.lblFullName.TabIndex = 0;
+            this.lblFullName.Text = ":الاسم الكامل";
             // 
             // dgvMembers
             // 
@@ -148,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(857, 480);
             this.Controls.Add(this.btnDeleteMember);
             this.Controls.Add(this.btnUpdateMember);
             this.Controls.Add(this.btnAddMember);

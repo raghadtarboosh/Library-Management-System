@@ -19,7 +19,9 @@ namespace LibraryManagementSystem
 
         private void عارةكتابToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            // فتح واجهة الإعارة عند النقر
+            frmBorrowing borrowingForm = new frmBorrowing();
+            borrowingForm.Show();
         }
 
         private void إدارةالكتبToolStripMenuItem_Click(object sender, EventArgs e)
